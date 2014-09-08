@@ -1,0 +1,1 @@
+I had a project that required me to load images for a slider in a data attribue, so I combined a small plugin I wrote with blslider.js

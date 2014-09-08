@@ -1,0 +1,70 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/jquery.bxslider.css">
+<style>
+	body{
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	pre{
+		background: #efefef;
+		padding: 10px 5px;
+	}
+</style>
+</head>
+<body>
+
+<h1>blSlider.js</h1>
+<p>Pass in a data attribute of images you want to use with bxslider.js</p>
+<ul class="bxslider slothSlider" data-images="img/sloth.jpeg, img/sloth.jpeg, img/sloth.jpeg, img/sloth.jpeg, img/sloth.jpeg, img/sloth.jpeg, img/sloth.jpeg"></ul>
+<h3>How to use:</h3>
+
+<pre>
+	&lt;link rel=&quot;stylesheet&quot; href=&quot;css/jquery.bxslider.css&quot;&gt;
+	&lt;script src=&quot;js/jquery.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;js/blslider.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;js/bxslider.js&quot;&gt;&lt;/script&gt;
+
+	&lt;ul class=&quot;bxslider slothSlider&quot; data-images=&quot;img/sloth.jpeg, img/sloth.jpeg, 
+	img/sloth.jpeg, img/sloth.jpeg, img/sloth.jpeg, img/sloth.jpeg, img/sloth.jpeg&quot;&gt;&lt;/ul&gt;
+
+	&lt;script&gt;
+	$(function(){
+		
+		$(&#39;.slothSlider&#39;).blSlider();
+
+		$(&#39;.bxslider&#39;).bxSlider({
+			minSlides: 4,
+			maxSlides: 4,
+			slideWidth: 300,
+			slideMargin: 10
+		});
+
+	});
+	&lt;/script&gt;
+</pre>
+
+
+	<script src="js/jquery.js"></script>
+	<script src="js/blslider.js"></script>
+	<script src="js/bxslider.js"></script>
+
+
+	<script>
+
+	$(function(){
+		
+		$('.slothSlider').blSlider();
+
+		$('.bxslider').bxSlider({
+			minSlides: 4,
+			maxSlides: 4,
+			slideWidth: 300,
+			slideMargin: 10
+		});
+
+	});
+	</script>
+
+</body>
+</html>
